@@ -1,0 +1,113 @@
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;  /* Stacks the children vertically */
+    align-items: center;     /* Centers the body */
+    justify-content: flex-start;  /* Aligns the body to the top */
+    min-height: 100vh;
+    margin: 0;
+    background: #ffffff;
+}
+
+/* Header */
+header {
+	margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif; /* Use the Google font */
+    font-size: 50px; /* Increase the font size */
+    font-weight: 700; /* Make the font bold */
+    color: #333; /* Dark color for the title */
+    text-transform: uppercase; /* Make the title uppercase */
+    letter-spacing: 2px; /* Add spacing between letters */
+    margin-top: 70px; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Swedish Flag */
+.swedish-flag {
+	width: 200px;
+	height: auto;
+	margin-top: 20px;
+}
+
+/* Search Bar */
+.search {
+	width: 500px;
+	display: flex;
+	align-items: center;
+	padding: 14px;
+	border-radius: 28px;
+	background: #f6f6f6;
+	transition: background 0.25s;
+	margin-bottom: 20px;
+}
+
+.search:focus-within {
+	background: #edebeb;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+
+.search-input {
+	font-size: 16px;
+	font-family: "Lexend", sans-serif;
+	color: #333333;
+	outline: none;
+	border: none;
+	background: transparent;
+	flex: 1;
+}
+
+.search-input::placeholder, .search-icon {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+/*Buttons*/
+.button-container {
+	display: grid; /* Adds flexbox */
+	grid-auto-flow: column;
+	gap: 10px;
+}
+
+.migration-btn, .styrelse-btn, .rätts-btn, .intl-btn, .jämställdhet-btn, .utbildning-btn, .hälsa-btn {
+	font-size: 15px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 30px;
+    padding: 15px 20px;
+    border: 2px solid #c7c7c7;
+    cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(210, 210, 210);
+	border-color: #9a9a9a;
+}
+
+/* Table */
+#budgetTable {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	margin-top: 20px;
+}
+
+#budgetTable th, #budgetTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#budgetTable th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#budgetTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#budgetTable tbody tr:hover {
+    background-color: #f1f1f1;
+}

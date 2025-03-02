@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
 </head>
 <body>
+	<div id="red-bar-container">
+		<h3>Total Saved: <span id="total-saved">0,00 kr</span></h3>
+	</div>
 	<h1>Myndigheten för Statlig Effektivitet V0.1</h1>
 	<!-- Swedish Flag -->
 	<header>
@@ -35,6 +38,7 @@
 
 	<!-- Results will be displayed here -->
 	<div id="resultsContainer"></div>
+
 	<!-- Table -->
     <table id="budgetTable">
         <thead>
@@ -43,12 +47,12 @@
                 <th>Year</th>
                 <th>Department</th>
                 <th>Total Spent</th>
-		<th>Organization Number</th>
-		<th>Grant Name</th>
-		<th>Grant Entry Name</th>
+				<th>Organization Number</th>
+				<th>Grant Name</th>
+				<th>Grant Entry Name</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="table-body">
             <!-- Data rows will be inserted here -->
         </tbody>
     </table>

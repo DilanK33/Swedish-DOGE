@@ -132,3 +132,15 @@ function show_datas(category) {
         })
         .catch(error => console.error("Error fetching data:", error));
 }
+
+function getCurrentMonth() {
+	const months = [
+		'January', 'February', 'March', 'April', 'May', 'June',
+		'July', 'August', 'September', 'October', 'November', 'December'
+	];
+	const currentDate = new Date();
+	const currentMonth = months[currentDate.getMonth()];
+	return currentMonth;
+}
+
+document.getElementById("current-month").innerText = getCurrentMonth();

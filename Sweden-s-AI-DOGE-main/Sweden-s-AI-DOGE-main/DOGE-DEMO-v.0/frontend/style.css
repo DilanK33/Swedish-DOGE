@@ -20,6 +20,12 @@ body {
 	height: fit-content;
 }
 
+/* Month Text */
+.month {
+	text-align: center;
+	font-size: 25px;
+}
+
 /* Header */
 header {
 	margin-bottom: 10px;

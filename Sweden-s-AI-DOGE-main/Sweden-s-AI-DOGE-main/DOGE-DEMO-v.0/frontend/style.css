@@ -1,130 +1,130 @@
 /* Body styling */
-body {
-    display: flex;
-    flex-direction: column;  /* Stacks the children vertically */
-    align-items: center;     /* Centers the body */
-    justify-content: flex-start;  /* Aligns the body to the top */
-    min-height: 100vh;
-    margin: 0;
+/* Nav Bar */
+* {
+	box-sizing: border-box;
+	margin: 0;
 	padding: 0;
-    background: #ffffff;
+	background-color: #030b1e;
 }
 
-/* Red Bar */
-#red-bar-container {
-	background: rgb(246, 246, 246);
-	width: 100%;
-	text-align: center;
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 20px;
-	height: fit-content;
-}
-
-/* Month Text */
-.month {
-	text-align: center;
-	font-size: 25px;
-}
-
-/* Header */
-header {
-	margin-bottom: 10px;
-}
-
-h1 {
-    font-family: 'Roboto', sans-serif; /* Use the Google font */
-    font-size: 50px; /* Increase the font size */
-    font-weight: 700; /* Make the font bold */
-    color: #333; /* Dark color for the title */
-    text-transform: uppercase; /* Make the title uppercase */
-    letter-spacing: 2px; /* Add spacing between letters */
-    margin-top: 70px; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-}
-
-/* Swedish Flag */
-.swedish-flag {
-	width: 200px;
-	height: auto;
-	margin-top: 20px;
-}
-
-/* Search Bar */
-.search {
-	width: 500px;
-	display: flex;
-	align-items: center;
-	padding: 14px;
-	border-radius: 28px;
-	background: #f6f6f6;
-	transition: background 0.25s;
-	margin-bottom: 20px;
-}
-
-.search:focus-within {
-	background: #edebeb;
-	box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
-}
-
-.search-input {
+li, a, button {
+	font-family: "Mona Sans", sans-serif;
+	font-weight: 500;
 	font-size: 16px;
-	font-family: "Lexend", sans-serif;
-	color: #333333;
-	outline: none;
+	color: rgb(212, 212, 212);
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	padding: 20px 10px;
+	border-bottom: 1px solid #333333;
+	margin-right: 20rem;
+	margin-left: 20rem;
+}
+
+.logo {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.title-text {
+	font-family: "mona sans", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: white;
+	margin-right: 21rem;
+	letter-spacing: 0.5px;
+	cursor: pointer; 
+}
+
+.sub-title {
+	font-family: "mona sans", sans-serif;
+	font-weight: 400;
+	color: rgb(171, 171, 171);
+	cursor: pointer; 
+}
+
+.nav__links {
+	list-style: none;
+}
+
+.nav__links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav__links li a {
+	transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+	color:rgb(255, 255, 255)
+}
+
+/* X Feed */
+.X-container {
+	margin-top: 40px;
+	margin-left: 35rem;
+	margin-right: 35rem;
+}
+
+/* Before X feed */
+.X-button {
+	background-color: white;
+	cursor: pointer;
 	border: none;
-	background: transparent;
-	flex: 1;
+	color: rgb(0, 0, 0);
+	padding: 5px 15px;
+	border-radius: 10px;
+	text-decoration: none;
+	margin-left: 87%;
 }
 
-.search-input::placeholder, .search-icon {
-	color: rgba(0, 0, 0, 0.5);
+.x-logo {
+	background-color: white;
+	padding:1px;
+	width: 15px;
+	height: 15px;
 }
 
-/*Buttons*/
-.button-container {
-	display: grid; /* Adds flexbox */
-	grid-auto-flow: column;
+.latest-news {
+	color: white;
+	font-family: "mona sans", sans-serif;	
+	font-weight: 400;
+	font-size: 30px;
+	margin-top: -2rem;
+}
+
+/* X Feed */
+.post-rectangle {
+	background-color: #030b1e;
+	display: flex;
 	gap: 10px;
-}
-
-.migration-btn, .styrelse-btn, .rätts-btn, .intl-btn, .jämställdhet-btn, .utbildning-btn, .hälsa-btn {
-	font-size: 15px;
-    background-color: rgb(236, 236, 236);
-    border-radius: 30px;
-    padding: 15px 20px;
-    border: 2px solid #c7c7c7;
-    cursor: pointer;
-}
-
-button:hover {
-	background-color: rgb(210, 210, 210);
-	border-color: #9a9a9a;
-}
-
-/* Table */
-#budgetTable {
-    width: 80%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	margin-top: 20px;
+	height: auto;
+  	width: 100%;
+	border: 1px solid rgb(173, 173, 173);
+	border-radius: 5px;
+	padding: 15px;
 }
 
-#budgetTable th, #budgetTable td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
+.post-image {
+	margin-top: 25px;
+	display: flex;
+	width: 90%;
+	height: 82%;
+	margin: left;
 }
 
-#budgetTable th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-}
-
-#budgetTable tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-#budgetTable tbody tr:hover {
-    background-color: #f1f1f1;
+.date {
+	color: rgb(155, 153, 153);
+	font-family: "mona sans", sans-serif;	
+	font-weight: 400;
+	font-size: 15px;
+	margin-top: 1.5rem;
 }

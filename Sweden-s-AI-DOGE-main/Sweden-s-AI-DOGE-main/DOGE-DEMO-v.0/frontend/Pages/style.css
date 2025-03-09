@@ -128,3 +128,99 @@ header {
 	font-size: 15px;
 	margin-top: 1.5rem;
 }
+
+/* Sparningar Sida */
+.sparningar {
+	color: white;
+}
+
+.utgifter {
+	color: white;
+}
+
+.savings-container {
+	margin-top: 7rem;
+	margin-left: 25rem;
+	margin-right: 25rem;
+}
+
+.estimated-savings {
+	color: rgb(204, 204, 204);
+	font-family: "mona sans", sans-serif;	
+	font-weight: 400;
+	font-size: 25px;
+	display: inline;
+	margin-left: 15rem;
+}
+
+.per-taxpayer {
+	color: rgb(204, 204, 204);
+	font-family: "mona sans", sans-serif;	
+	font-weight: 400;
+	font-size: 25px;
+	display: inline;
+	padding: 7rem;
+}
+
+.estimated-savings-amount {
+	color: rgb(213, 178, 2);
+	font-family: "mona sans", sans-serif;	
+	font-weight: 700;
+	font-size: 50px;
+	margin-left: 16rem;
+	display: inline;
+}
+
+.per-taxpayer-amount {
+	color: rgb(213, 178, 2);
+	font-family: "mona sans", sans-serif;	
+	font-weight: 700;
+	font-size: 50px;
+	margin-left: 9rem;
+	display: inline;
+}
+
+/* Utgifter Sida */
+.utgift-container {
+	margin-top: 5rem;
+	margin-left: 22rem;
+	margin-right: 22rem;
+	font-family: "mona sans", sans-serif;
+	color: white;
+	font-size: 13px;
+}
+
+table, th, td {
+	font-family: "mona sans", sans-serif;
+	color: white;
+	width: 70%;
+	padding: 2rem;
+}
+
+td {
+	border-bottom: 0.2px solid rgb(48, 48, 48);
+	font-family: "mona sans", sans-serif;
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	padding: 0.75rem;
+}
+
+table {
+	width: 100%;
+}
+
+
+th {
+	font-family: "mona sans", sans-serif;
+	color: rgb(179, 179, 179);
+	font-size: 17px;
+	font-weight: 500;
+	border-bottom: 0.2px solid rgb(48, 48, 48);
+	padding: 1rem;
+	text-align: left;
+}
+
+.money-font {
+	font-family: 'Courier New', Courier, monospace;
+}

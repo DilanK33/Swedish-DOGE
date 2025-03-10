@@ -239,3 +239,93 @@ th {
 .regleringar {
 	color: white;
 }
+
+/* Länkar */
+/* Sparningar */
+.link-data {
+	text-align: center; 
+	margin-top: 5rem;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.link-button {
+	background-color: white;
+	cursor: pointer;
+	border: none;
+	color: rgb(85, 84, 84);
+	padding: 5px 15px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.link-button:hover {
+	background-color: rgb(202, 202, 202);
+}
+
+/* Utgifter */
+.link-skuld {
+	text-align: center; 
+	margin-top: 5rem;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.link-button-skuld {
+	background-color: white;
+	cursor: pointer;
+	border: none;
+	color: rgb(85, 84, 84);
+	padding: 5px 15px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.link-button-skuld:hover {
+	background-color: rgb(202, 202, 202);
+}
+
+/* Arbetskraft */
+.myndigheter {
+	text-align: center; 
+	margin-top: 5rem;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.myndigheter-button {
+	background-color: white;
+	cursor: pointer;
+	border: none;
+	color: rgb(85, 84, 84);
+	padding: 5px 15px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.myndigheter-button:hover {
+	background-color: rgb(202, 202, 202);
+}
+
+/* Regleringar */
+.reg {
+	margin-top: 3rem;
+	font-size: 30px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+}
+
+.reg-button {
+	background-color: white;
+	cursor: pointer;
+	border: none;
+	color: rgb(85, 84, 84);
+	padding: 5px 15px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.reg-button:hover {
+	background-color: rgb(202, 202, 202);
+}

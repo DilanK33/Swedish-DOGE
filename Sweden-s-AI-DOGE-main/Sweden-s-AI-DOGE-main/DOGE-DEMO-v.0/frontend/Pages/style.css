@@ -134,10 +134,6 @@ header {
 	color: white;
 }
 
-.utgifter {
-	color: white;
-}
-
 .savings-container {
 	margin-top: 7rem;
 	margin-left: 25rem;
@@ -181,6 +177,10 @@ header {
 }
 
 /* Utgifter Sida */
+.utgifter {
+	color: white;
+}
+
 .utgift-container {
 	margin-top: 5rem;
 	margin-left: 22rem;
@@ -223,4 +223,19 @@ th {
 
 .money-font {
 	font-family: 'Courier New', Courier, monospace;
+}
+
+/* Arbetskraft Sida */
+.arbetskraft {
+	color: white;
+}
+
+.regering-bild {
+	place-items: center;
+	display: grid;
+}
+
+/* Regleringar Sida */
+.regleringar {
+	color: white;
 }

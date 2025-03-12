@@ -9,16 +9,16 @@ class BudgetEntry(Base):
 
 	id = Column(Integer, primary_key=True)
 	year = Column(Integer)
-	grant_date = Column(String)
-	grant_name = Column(String)
-	grant_entry_name = Column(String)
-	department = Column(String)
-	org_nr = Column(String) # Way to search the organization
-	category_date = Column(String)
-	category_area_real = Column(String)
-	grant_name_real = Column(String)
-	grant_entry_name_real = Column(String)
 	category = Column(String) # 'Genre'/'Area of interest'/Filters/category
+	grant_date = Column(String)  # This will map to 'Anslag'
+	grant_name = Column(String)  # This will map to 'Anslagsnamn'
+	grant_entry_name = Column(String)  # This will map to 'Anslagspostsnamn'
+	department = Column(String)  # This will map to 'Myndighet'
+	org_nr = Column(String)  # This will map to 'Organisationsnummer'
+	category_date = Column(String)  # This will map to 'Utgiftsområde utfallsår'
+	category_area_real = Column(String)  # This will map to 'Utgiftsområdesnamn utfallsår'
+	grant_name_real = Column(String)  # This will map to 'Anslagsnamn utfallsår'
+	grant_entry_name_real = Column(String)  # This will map to 'Anslagspostsnamn utfallsår'
 	total_spent = Column(Float)
 
 	def to_dict(self):

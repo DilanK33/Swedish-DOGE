@@ -14,7 +14,9 @@ df = pd.read_json(file_path, encoding='utf-8')
 engine = create_engine("sqlite:///budget.db")
 
 # Create tables if they don't exist
+Base.metadata.drop_all(engine)
 Base.metadata.create_all(engine)
+
 
 # Create a session
 Session = sessionmaker(bind=engine)

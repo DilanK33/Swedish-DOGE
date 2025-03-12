@@ -9,11 +9,16 @@ class BudgetEntry(Base):
 
 	id = Column(Integer, primary_key=True)
 	year = Column(Integer)
-	department = Column(String) 
-	grant_name = Column(String) # For what?
-	grant_entry_name = Column(String) # With what purpose or for whom?
-	category = Column(String) # 'Genre'/'Area of interest'/Filters/category
+	grant_date = Column(String)
+	grant_name = Column(String)
+	grant_entry_name = Column(String)
+	department = Column(String)
 	org_nr = Column(String) # Way to search the organization
+	category_date = Column(String)
+	category_area_real = Column(String)
+	grant_name_real = Column(String)
+	grant_entry_name_real = Column(String)
+	category = Column(String) # 'Genre'/'Area of interest'/Filters/category
 	total_spent = Column(Float)
 
 	def to_dict(self):
@@ -21,14 +26,18 @@ class BudgetEntry(Base):
 		return {
 			"id": self.id,
 			"year": self.year,
-			"department": self.department,
+			"category": self.category,
+			"grant_date": self.grant_date,
 			"grant_name": self.grant_name,
 			"grant_entry_name": self.grant_entry_name,
-			"category": self.category,
+			"department": self.department,
 			"org_nr": self.org_nr,
+			"category_date": self.category_date,
+			"category_area_real": self.category_area_real,
+			"grant_name_real": self.grant_name_real,
+			"grant_entry_name_real": self.grant_entry_name_real,
 			"total_spent": self.total_spent
 		}
-
 # Create engine establishes a connection to the database, in this case I'll be using sqlite
 engine = create_engine("sqlite:///budget.db")
 # creates the database tables if they don't already exist

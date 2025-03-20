@@ -152,3 +152,7 @@ function spendings(file_name_spendings) {
 	})
 	.catch(error => console.error('Error fetching data:', error));
 }
+
+// function showSidebar() {
+
+// }

@@ -18,34 +18,53 @@
 				<h1 class="mobile-title-text">@MFSE</h1>
 				<p class="sub-title">Det Svenska Folkets Beslut.</p>
 			</div>
+			<ul class="sidebar">
+				<li class="close-button" onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+				<li ><a href="sparningar.html">Sparningar</a></li>
+				<li ><a href="utgifter.html">Utgifter</a></li>
+				<li ><a href="arbetskraft.html">Arbetskraft</a></li>
+				<li ><a href="regleringar.html">Regleringar</a></li>
+			</ul>
 		</div>
 		<ul class="nav__links">
 			<li class="hideOnMobile"><a href="sparningar.html">Sparningar</a></li>
 			<li class="hideOnMobile"><a href="utgifter.html">Utgifter</a></li>
 			<li class="hideOnMobile"><a href="arbetskraft.html">Arbetskraft</a></li>
 			<li class="hideOnMobile"><a href="regleringar.html">Regleringar</a></li>
+			<li class="menu-button" onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
 		</ul>
 	</nav>
-	<div>
+	<script>
+		function showSidebar() {
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = 'flex'
+		}
+		function hideSidebar() {
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = 'none'
+		}
+	</script>
+	<div class="X-header-section">
+		<h2 class="latest-news">Senaste nytt</h2>
 		<a class="X-button" target="_blank" href="https://x.com/MFSEswe">Följ på
 			<img class="x-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg">
 		</a>
 	</div>
 	<div class="X-container">
-		<p class="latest-news">Senaste nytt</p>
 		<div class="x-feed">
 			<!--Posts start here-->
 			<div class="post-rectangle">
-				<img class="logo" id="logo" src="images\three_crowns.png" alt="logo">
+				<img class="post-logo" id="post-logo" src="images\three_crowns.png" alt="logo">
 				<div class="post-container">
-					<a href="https://x.com/MFSEswe" target="_blank" rel="noopener noreferrer" class="title-text-post">Myndigheten för Statlig Effektivitet</a>
+					<a href="https://x.com/MFSEswe" target="_blank"  class="title-text-post">Myndigheten för Statlig Effektivitet</a>
 					<a href="https://x.com/MFSEswe" target="_blank" rel="noopener noreferrer" class="sub-title-post">@MFSE</a>
+					<p class="post-content">This week, @Interior is dissolving the Federal Consulting Group (FCG), where one government department charges another to broker consulting contracts.This week, @Interior is dissolving the Federal Consulting Group (FCG), where one government department charges another to broker consulting contracts</p>
 					<img class="post-image" src="images/image.png">
 					<p class="date">21:22 · 8 Mars 2025</p>
 				</div>
 			</div>	
 			<div class="post-rectangle">
-				<img class="logo" id="logo" src="images\three_crowns.png" alt="logo">
+				<img class="post-logo" id="post-logo" src="images\three_crowns.png" alt="logo">
 				<div class="post-container">
 					<a href="https://x.com/MFSEswe" target="_blank" rel="noopener noreferrer" class="title-text-post">Myndigheten för Statlig Effektivitet</a>
 					<a href="https://x.com/MFSEswe" target="_blank" rel="noopener noreferrer" class="sub-title-post">@MFSE</a>
@@ -53,7 +72,7 @@
 				</div>
 			</div>	
 			<div class="post-rectangle">
-				<img class="logo" id="logo" src="images\three_crowns.png" alt="logo">
+				<img class="post-logo" id="post-logo" src="images\three_crowns.png" alt="logo">
 				<div class="post-container">
 					<a href="https://x.com/MFSEswe" target="_blank" rel="noopener noreferrer" class="title-text-post">Myndigheten för Statlig Effektivitet</a>
 					<a href="https://x.com/MFSEswe" target="_blank" rel="noopener noreferrer" class="sub-title-post">@MFSE</a>

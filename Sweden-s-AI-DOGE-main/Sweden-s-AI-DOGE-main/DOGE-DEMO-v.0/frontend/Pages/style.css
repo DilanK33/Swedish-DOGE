@@ -64,16 +64,58 @@ li, a, button {
 	width: 100%;
 }
 
+/* Sidebar */
+.sidebar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 250px;
+	z-index: 999;
+	background-color: #030b1e;
+	box-shadow: -10px 0 10px black;
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.sidebar li {
+	width: 100%;
+}
+
+.sidebar a {
+	width: 100%;
+}
+
+.close-button {
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.menu-button {
+	display: none;
+	cursor: pointer;
+}
+
 /* Logo and Name */
 	/* Hide the nav links before it messes up the logo & name */
 @media(min-width: 0px) {
 	.mobile-title-text {
 		display: none;
 	}
+	.sidebar {
+		display: none;
+	}
 }
-@media(max-width: 1050px) {
+@media(max-width: 1150px) {
 	.hideOnMobile {
 		display: none;
+	}
+	.menu-button {
+		display: block;
 	}
 	.title-text {
 		display: none;
@@ -84,9 +126,16 @@ li, a, button {
 	.mobile-title-text {
 		display: flex;
 	}
+	.home-part {
+		padding-left: 10px;
+	}
 	/* .logo {
 		height: 30px;
 	} */
+}
+
+@media(max-width: 1250px) {
+
 }
 
 .logo {
@@ -121,22 +170,23 @@ li, a, button {
 	cursor: pointer; 
 }
 
+/* Body */
+
 /* X Feed header */
 .X-header-section {
 	display: flex;
-	flex-direction: row;
-	padding: 10px 10px;
+	justify-content: center;
 	align-items: center;
+	padding: 1%;
+	gap: 520px; /* Adjust the spacing */
 }
 
-/* X Feed */
-.X-container {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
+.latest-news {
+	color: rgb(230, 227, 227);
+	font-weight: 400;
+	font-size: 30px;
 }
 
-/* Before X feed */
 .X-button {
 	background-color: white;
 	cursor: pointer;
@@ -145,42 +195,71 @@ li, a, button {
 	padding: 5px 15px;
 	border-radius: 10px;
 	text-decoration: none;
-	margin-left: 87%;
+	/* margin-left: 21vw; */
 }
 
+/* Logo on the follow me button */
 .x-logo {
 	background-color: white;
-	padding:1px;
-	width: 15px;
+	padding: 1px 1px;
+	width: auto;
 	height: 15px;
 }
 
-.latest-news {
-	color: white;
-	font-family: "mona sans", sans-serif;	
-	font-weight: 400;
-	font-size: 30px;
-	margin-top: -2rem;
-}
-
 /* X Feed */
-.post-rectangle {
-	background-color: #030b1e;
+.X-container, .x-feed {
 	display: flex;
-	gap: 10px;
-	margin-top: 20px;
-	height: auto;
-  	width: 100%;
-	border: 1px solid rgb(173, 173, 173);
-	border-radius: 5px;
-	padding: 15px;
+	flex-direction: column;
+	align-items: center;
 }
 
+/* Rectangle surrounding the posts */
+.post-rectangle {
+	background-color: #020610;
+	display: flex;
+	margin-top: 20px;
+	align-items: left;
+	height: 600px;
+  	width: 800px;
+	border: 1.3px solid rgb(140, 140, 140);
+	border-radius: 5px;
+	padding: 15px 0px;
+}
+
+.post-logo {
+	align-items: left;
+	/* display: flex; */
+	border-radius: 50%;
+	padding: 0px 15px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.post-container {
+	display: flex;
+	align-items: top;
+	flex-direction: column;
+	max-width: 75%;
+	height: 2000px;
+}
+
+.post-content {
+	margin-top: 10px;
+	color: white;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	font-weight: 500;
+	max-width: fit-content;
+	max-height: fit-content;
+}
+
+/* Purely styling the images from real posts */
 .post-image {
-	margin-top: 25px;
-	display: block;
-	max-width: 100%;
-	height: 82%;
+	display: flex;
+	align-items: center;
+	padding: 15px 0px;
+	width: 110%;
+	height: 20%;
 	margin: left;
 }
 
@@ -189,17 +268,12 @@ li, a, button {
 	font-family: "mona sans", sans-serif;	
 	font-weight: 400;
 	font-size: 15px;
-	margin-top: 1.5rem;
-}
-
-.post-container {
-	display: flex;
-	flex-direction: column;
+	margin-top: 5px;
 }
 
 .title-text-post {
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 16px;
 	color: white;
 	letter-spacing: 0.5px;
 	cursor: pointer; 
@@ -210,6 +284,7 @@ li, a, button {
 	font-weight: 400;
 	color: rgb(171, 171, 171);
 	cursor: pointer; 
+	margin-top: 4px;
 }
 
 /* Sparningar Sida */

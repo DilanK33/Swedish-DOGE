@@ -129,13 +129,21 @@ li, a, button {
 	.home-part {
 		padding-left: 10px;
 	}
+	/* .post-image {
+		height: 125px;
+		width: 200px;
+	} */
 	/* .logo {
-		height: 30px;
+		height: 20px;
 	} */
 }
-
-@media(max-width: 1250px) {
-
+@media(max-width: 800px) {
+	/* .post-rectangle{
+		width: 100vw;
+	} */
+	.latest-news {
+		font-size: 10px;
+	}
 }
 
 .logo {
@@ -159,7 +167,6 @@ li, a, button {
 	font-size: 20px;
 	color: white;
 	cursor: pointer; 
-	/* display: none; */
 	text-align: center;
 	padding: 10px 0px;
 }
@@ -179,6 +186,8 @@ li, a, button {
 	align-items: center;
 	padding: 1%;
 	gap: 520px; /* Adjust the spacing */
+	/* flex-wrap: wrap;
+  	align-content: center; */
 }
 
 .latest-news {
@@ -219,8 +228,9 @@ li, a, button {
 	display: flex;
 	margin-top: 20px;
 	align-items: left;
-	height: 600px;
-  	width: 800px;
+	max-height: 600px;
+	height: min(50%, 600px);
+  	width: min(90%, 800px);
 	border: 1.3px solid rgb(140, 140, 140);
 	border-radius: 5px;
 	padding: 15px 0px;
@@ -236,6 +246,7 @@ li, a, button {
 }
 
 .post-container {
+	
 	display: flex;
 	align-items: top;
 	flex-direction: column;
@@ -249,8 +260,6 @@ li, a, button {
 	font-size: 14px;
 	letter-spacing: 0.5px;
 	font-weight: 500;
-	max-width: fit-content;
-	max-height: fit-content;
 }
 
 /* Purely styling the images from real posts */
@@ -260,6 +269,7 @@ li, a, button {
 	padding: 15px 0px;
 	width: 110%;
 	height: 20%;
+	max-height: fit-content;
 	margin: left;
 }
 

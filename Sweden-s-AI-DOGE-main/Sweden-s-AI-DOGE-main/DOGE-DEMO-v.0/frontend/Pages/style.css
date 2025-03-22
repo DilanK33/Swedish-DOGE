@@ -4,8 +4,8 @@
 }
 
 body {
-	background-color: #030b1e;
 	font-family: "Mona Sans", sans-serif;
+	background-color: #010817;
 }
 
 /* Nav Bar */
@@ -129,13 +129,18 @@ li, a, button {
 	.home-part {
 		padding-left: 10px;
 	}
-	/* .post-image {
-		height: 125px;
-		width: 200px;
+}
+
+@media(max-width: 900px) {
+	/* .latest-news {
+		font-size: 20px !important;
 	} */
-	/* .logo {
+	.logo {
 		height: 20px;
-	} */
+	}
+	.X-header-section {
+		gap: 50% !important;
+	}
 }
 
 .logo {
@@ -171,15 +176,33 @@ li, a, button {
 
 /* Body */
 
-/* X Feed header */
-.X-header-section {
+/* Copy */
+/* .X-header-section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 1%;
-	gap: 520px; /* Adjust the spacing */
-	/* flex-wrap: wrap;
-  	align-content: center; */
+	border: 1px solid white; */
+	/* gap: min(50%, 520px); */
+	/* gap: 520px; */
+	/* width: min(90vw, 95vh);
+	height: min(50%, 600px); */
+/* } */
+
+/* X Feed header */
+.body-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.X-header-section {
+	display: flex;
+	padding: 1%;
+	border: 1px solid white;
+	gap: 520px;
+	/* gap: min(50%, 520px); */
+	width: min(90%, 800px);
+	height: min(50%, 600px);
 }
 
 .latest-news {
@@ -189,6 +212,8 @@ li, a, button {
 }
 
 .X-button {
+	display: flex;
+	/* align-items: right; */
 	background-color: white;
 	cursor: pointer;
 	border: none;
@@ -196,7 +221,6 @@ li, a, button {
 	padding: 5px 15px;
 	border-radius: 10px;
 	text-decoration: none;
-	/* margin-left: 21vw; */
 }
 
 /* Logo on the follow me button */
@@ -220,11 +244,9 @@ li, a, button {
 	display: flex;
 	margin-top: 20px;
 	align-items: left;
-	border: 1.3px solid rgb(140, 140, 140);
+	border: 2px solid rgb(81, 81, 81);
 	border-radius: 5px;
 	padding: 15px 0px;
-	/* max-height: 600px; */
-	/* height: 600px; */
 	width: 800px;
   	width: min(90vw, 800px);
 	height: min(50%, 600px);

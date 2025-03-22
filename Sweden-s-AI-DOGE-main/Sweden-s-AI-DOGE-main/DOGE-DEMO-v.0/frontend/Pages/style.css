@@ -132,16 +132,19 @@ li, a, button {
 }
 
 @media(max-width: 900px) {
-	/* .latest-news {
+	.latest-news {
 		font-size: 20px !important;
-	} */
-	.logo {
-		height: 20px;
 	}
+	/* .X-header-section {
+		gap: 50% !important;
+	} */
+}
+
+/* @media(max-width: 750px) {
 	.X-header-section {
 		gap: 50% !important;
 	}
-}
+} */
 
 .logo {
 	display: flex;

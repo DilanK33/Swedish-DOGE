@@ -134,10 +134,11 @@ li, a, button {
 @media(max-width: 900px) {
 	.latest-news {
 		font-size: 20px !important;
+		/* gap: 60% */
 	}
-	/* .X-header-section {
-		gap: 50% !important;
-	} */
+	.X-header-section {
+		gap: 580px !important;
+	}
 }
 
 /* @media(max-width: 750px) {
@@ -168,6 +169,7 @@ li, a, button {
 	color: white;
 	cursor: pointer; 
 	text-align: center;
+	margin: auto;
 	padding: 10px 0px;
 }
 
@@ -203,9 +205,8 @@ li, a, button {
 	padding: 1%;
 	border: 1px solid white;
 	gap: 520px;
-	/* gap: min(50%, 520px); */
+	/* width: 800px; */
 	width: min(90%, 800px);
-	height: min(50%, 600px);
 }
 
 .latest-news {
@@ -216,12 +217,12 @@ li, a, button {
 
 .X-button {
 	display: flex;
-	/* align-items: right; */
 	background-color: white;
 	cursor: pointer;
 	border: none;
 	color: rgb(0, 0, 0);
-	padding: 5px 15px;
+	padding: 1% 2%;
+	/* width: min(20%, 90px); */
 	border-radius: 10px;
 	text-decoration: none;
 }

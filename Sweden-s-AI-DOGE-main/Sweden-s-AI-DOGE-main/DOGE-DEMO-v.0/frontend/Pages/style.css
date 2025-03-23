@@ -353,43 +353,58 @@ li, a, button {
 }
 
 /* Utgifter Sida */
-.utgifter {
+.utgift-text {
 	color: white;
+	text-align: center;
+	padding: 0.5rem;
+	color: rgb(168, 164, 164);
 }
 
-.utgift-container {
-	margin-top: 5rem;
-	margin-left: 20rem;
-	margin-right: 20rem;
-	font-family: "mona sans", sans-serif;
+.wrapper {
+	width: min(1300px, 90%);
+	margin-inline: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 650px);
+	justify-content: center;
 	color: white;
 	font-size: 13px;
+	/* border: 1px solid white; */
+}
+
+.table-container {
+	max-width: 100%;
+}
+
+.caption {
+	text-align: center;
+	font-size: 35px;
+	font-weight: 700;
+	color: rgb(238, 238, 236);
 }
 
 table, th, td {
-	font-family: "mona sans", sans-serif;
 	color: white;
-	width: 70%;
-	padding: 1rem 5rem;
 }
 
 
 td {
+	padding: 1rem;
 	border-bottom: 0.2px solid rgb(48, 48, 48);
-	font-family: "mona sans", sans-serif;
 	color: rgb(255, 255, 255);
 	font-size: 15px;
 	letter-spacing: 0.5px;
 	padding: 0.75rem;
+	width: fit-content;
+	text-align: left;
 }
 
 table {
 	width: 100%;
-	margin-bottom: 5rem;
+	border-collapse: collapse; 
 }
 
 th {
-	font-family: "mona sans", sans-serif;
+	padding: 1rem;
 	color: rgb(179, 179, 179);
 	font-size: 17px;
 	font-weight: 500;
@@ -398,9 +413,91 @@ th {
 	text-align: left;
 }
 
-.money-font {
-	font-family: 'Courier New', Courier, monospace;
+@media(max-width: 650px) {
+	th {
+		display: none;
+	}
+	td {
+		display: block;
+	}
+	.wrapper {
+		grid-template-columns: repeat(1, 650px);
+	}
+
+	td:last-child {
+		/* padding-bottom: 3rem; */
+		border-bottom: 1.5px solid rgb(207, 202, 202);
+	}
+	td {
+		justify-content: center;
+		display: flex;
+		margin-left: 15%;
+		font-weight: 700;
+	}
+
 }
+
+/* Dropdown for utgifter */
+.drop-btn {
+	background-color: white;
+	color: black;
+	padding: 12px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 15px;
+	width: 5rem;
+	font-family: sans-serif;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+.dropdown {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: right;
+	margin-right: 10%;
+	margin-left: 80%;
+	border-radius: 20px;
+}
+
+/* (Hidden by Default) */
+.dropdown-content {
+	text-align: center;
+	margin-top: 2.5rem;
+	border-radius: 20px;
+	display: none;
+	position: absolute;
+	background-color: #a0a0a0;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(161, 160, 160, 0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: rgb(255, 255, 255);
+	padding: 10px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+.dropdown-content a:hover {
+	border-radius: 20px;
+	background-color: rgb(225, 225, 225);
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+.dropdown:hover .drop-btn {
+	background-color: rgb(180, 180, 180);
+}
+
+/* .money-font {
+	font-family: 'Courier New', Courier, monospace;
+} */
 
 /* Arbetskraft Sida */
 .arbetskraft {
@@ -509,55 +606,5 @@ th {
 
 .reg-button:hover {
 	background-color: rgb(202, 202, 202);
-}
-
-/* Dropdown for utgifter */
-.drop-btn {
-	background-color: white;
-	color: black;
-	padding: 12px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-	border-radius: 15px;
-	width: 4rem;
-	font-family: sans-serif;
-	font-weight: 700;
-	margin-bottom: 2rem;
-}
-
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
-
-/* (Hidden by Default) */
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #a0a0a0;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(161, 160, 160, 0.2);
-	z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-	color: rgb(255, 255, 255);
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-  }
-  
-.dropdown-content a:hover {
-	background-color: rgb(225, 225, 225);
-}
-
-.dropdown:hover .dropdown-content{
-	display: block;
-}
-
-.dropdown:hover .drop-btn {
-	background-color: rgb(180, 180, 180);
 }
 

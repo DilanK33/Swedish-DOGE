@@ -45,43 +45,46 @@
 			sidebar.style.display = 'none'
 		}
 	</script>
-	<div class="utgift-container">
-		<!-- Dropdown Menu -->
-		<div class="dropdown">
-			<button class="drop-btn">År</button>
-			<div class="dropdown-content" id="year-dropdown">
-				<a href="#" data-year="2025">2025</href>
-				<a href="#" data-year="2024">2024</href>
-				<a href="#" data-year="2023">2023</href>
-				<a href="#" data-year="2022">2022</href>
-			</div>
+	<!-- Dropdown Menu -->
+	<div class="dropdown">
+		<button class="drop-btn">År</button>
+		<div class="dropdown-content" id="year-dropdown">
+			<a href="#" data-year="2025">2025</href>
+			<a href="#" data-year="2024">2024</href>
+			<a href="#" data-year="2023">2023</href>
+			<a href="#" data-year="2022">2022</href>
 		</div>
-		<h1>Myndighetens Utgifter</h1>
-		<table class="expense-table">
-			<thead>
-				<tr>
-				<th>Myndighet</th>
-				<th>År</th>
-			</tr>
-			</thead>
-			<tbody>
-				<!-- Rows will be added here -->
-			</tbody>
-		</table>
-
-		<h1>Myndighetens Inkomster</h1>
-
-		<table class="earnings-table">
-			<thead>
-				<tr>
-				<th>Myndighet</th>
-				<th>År</th>
-			</tr>
-			</thead>
-			<tbody>
-				<!-- Rows will be added here -->
-			</tbody>
-		</table>
+	</div>
+	<p class="utgift-text">Topp 25 högsta utgifter & inkomster.</p>
+	<div class="wrapper">
+		<div class="table-container">
+			<table class="expense-table">
+				<caption class="caption">Utgifter</caption>
+				<thead>
+					<tr>
+					<th>Myndighet</th>
+					<th>Antal</th>
+				</tr>
+				</thead>
+				<tbody>
+					<!-- Rows will be added here -->
+				</tbody>
+			</table>
+		</div>
+		<div class="table-container">
+			<table class="earnings-table">
+				<caption class="caption">Inkomster</caption>
+				<thead>
+					<tr>
+					<th>Myndighet</th>
+					<th>Antal</th>
+				</tr>
+				</thead>
+				<tbody>
+					<!-- Rows will be added here -->
+				</tbody>
+			</table>
+		</div>
 	</div>
 	<div class="link-skuld">
 		<a class="link-skuld" href="https://www.riksgalden.se/sv/statistik/statistik-om-sveriges-statsskuld/statsskuldens-utveckling/" target="__blank"><button class="link-button-skuld">Statskuldens Utveckling</button></a>

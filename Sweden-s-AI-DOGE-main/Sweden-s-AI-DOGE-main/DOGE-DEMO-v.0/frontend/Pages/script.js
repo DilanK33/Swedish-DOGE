@@ -78,8 +78,8 @@ function earnings(file_name_earnings) {
 				let formatted_number = num.toLocaleString('sv-SE')
 				// Add cells for department and total
 				row.innerHTML = `
-				<td>${item['Myndighet']}</td>  <!-- Access correct property name -->
-				<td>${formatted_number} kr</td>  <!-- Access correct property name for chosen year -->
+				<td class="data-cell">${item['Myndighet']}</td>  <!-- Access correct property name -->
+				<td class="data-cell">${formatted_number} kr</td>  <!-- Access correct property name for chosen year -->
 				`;
 
 				// Append the row to the tbody
@@ -96,8 +96,8 @@ function earnings(file_name_earnings) {
 		const totalRow = document.createElement('tr'); // Create the total row
 		let total_earnings_formatted = totality.toLocaleString('sv-SE')
 		totalRow.innerHTML = `
-			<td><strong>Totalt tjänat<strong></td>  <!-- Access correct property name -->
-			<td><strong>${total_earnings_formatted} kr<strong></td>  <!-- Access correct property name -->
+			<td class="data-cell"><strong>Totalt tjänat<strong></td>  <!-- Access correct property name -->
+			<td class="data-cell"><strong>${total_earnings_formatted} kr<strong></td>  <!-- Access correct property name -->
 			`;
 			tableBody.appendChild(totalRow);
 	})
@@ -127,8 +127,8 @@ function spendings(file_name_spendings) {
 				let formatted_number = num.toLocaleString()
 				// Add cells for department and total
 				row.innerHTML = `
-				<td>${item['Myndighet']}</td>  <!-- Access correct property name -->
-				<td>${formatted_number} kr</td>  <!-- Access correct property name for chosen year -->
+				<td class="data-cell">${item['Myndighet']}</td>  <!-- Access correct property name -->
+				<td class="data-cell">${formatted_number} kr</td>  <!-- Access correct property name for chosen year -->
 				`;
 
 				// Append the row to the tbody
@@ -145,8 +145,8 @@ function spendings(file_name_spendings) {
 		const totalRow = document.createElement('tr'); // Create the total row
 		let total_spent_formatted = totality.toLocaleString('sv-SE')
 		totalRow.innerHTML = `
-			<td><strong>Totalt spenderat<strong></td>  <!-- Access correct property name -->
-			<td><strong>${total_spent_formatted} kr<strong></td>  <!-- Access correct property name -->
+			<td class="data-cell"><strong>Totalt spenderat<strong></td>  <!-- Access correct property name -->
+			<td class="data-cell"><strong>${total_spent_formatted} kr<strong></td>  <!-- Access correct property name -->
 			`;
 			tableBody.appendChild(totalRow);
 	})

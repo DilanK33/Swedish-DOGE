@@ -45,48 +45,6 @@ def search():
 	else:
 		return jsonify({"message": "Please provide a year or a category for the search."})
 
-
-# @api.route('/search/<year>/<category>')
-# def search(year, category):
-# 	from models import BudgetEntry, Base
-
-# 	data = get_budget_data(year, category)
-
-# 	return jsonify(data)
-
-# @api.route('/search/<year>')
-# def search_year(year):
-# 	from models import BudgetEntry, Base
-
-# 	categories = session.query(BudgetEntry.category).distinct().all()
-
-# 	all_data = []
-
-# 	if not int(year):
-# 		year = 0
-
-# 	for category in categories:
-# 		all_data += get_budget_data(year, category[0])
-
-# 	print(all_data)
-
-# 	return jsonify(all_data)
-
-# @api.route('/search/<category>')
-# def search_cat(category):
-# 	from models import BudgetEntry, Base
-
-# 	years = session.query(BudgetEntry.year).distinct().all()
-
-# 	all_data = []
-
-# 	for year in years:
-# 		all_data += get_budget_data(year[0], category)
-
-# 	print(all_data)
-
-# 	return jsonify(all_data)
-
 @api.route('/Home',  methods=['GET'])
 def instructions():
 	from models import BudgetEntry, Base

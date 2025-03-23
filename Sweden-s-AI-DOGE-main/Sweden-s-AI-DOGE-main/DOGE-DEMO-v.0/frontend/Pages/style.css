@@ -446,8 +446,6 @@ th {
 	.card-taxpayer {
 		font-size: 20px;
 	}
-	
-
 }
 
 /* Dropdown for utgifter */
@@ -539,6 +537,37 @@ th {
 
 .link-button:hover {
 	background-color: rgb(202, 202, 202);
+}
+
+
+/* Utgifter Sida */
+.utgift-text {
+	color: white;
+	text-align: center;
+	padding: 0.5rem;
+	color: rgb(168, 164, 164);
+}
+
+.decision-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 13px;
+	border: 1px solid white;
+}
+
+.caption {
+	text-align: center;
+	font-size: 35px;
+	font-weight: 700;
+	color: rgb(238, 238, 236);
+}
+
+.decision-table {
+	width: 100%;
+	/* border-collapse: collapse;  */
 }
 
 /* Utgifter */

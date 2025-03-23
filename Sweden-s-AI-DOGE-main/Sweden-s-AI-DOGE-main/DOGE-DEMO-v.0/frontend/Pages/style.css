@@ -434,6 +434,19 @@ th {
 		margin-left: 15%;
 		font-weight: 700;
 	}
+	.grid-container {
+		grid-template-columns: repeat(2, 250px);
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.card-savings {
+		font-size: 20px;
+	}
+	
+	.card-taxpayer {
+		font-size: 20px;
+	}
+	
 
 }
 
@@ -499,16 +512,6 @@ th {
 	font-family: 'Courier New', Courier, monospace;
 } */
 
-/* Arbetskraft Sida */
-.arbetskraft {
-	color: white;
-}
-
-.regering-bild {
-	place-items: center;
-	display: grid;
-}
-
 /* Regleringar Sida */
 .regleringar {
 	color: white;
@@ -562,6 +565,13 @@ th {
 }
 
 /* Arbetskraft */
+.regering-bild {
+	width: 100%;
+	height: auto;
+	display: grid;
+	place-items: center;
+}
+
 .myndigheter {
 	text-align: center; 
 	margin-top: 5rem;
@@ -608,3 +618,10 @@ th {
 	background-color: rgb(202, 202, 202);
 }
 
+.coming-soon {
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	padding: 3rem;
+}

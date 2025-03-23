@@ -10,25 +10,42 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<a href="index.html">
-		<img class="logo" id="logo" src="images\three_crowns.png" alt="logo">
-            <div>
-                <h1 class="title-text">
-                    <span class="hidden md:block">Myndigheten för Statlig Effektivitet</span>
-                </h1>
-            <p class="sub-title">Det Svenska Folkets Beslut.</p>
-		</a>
-            </div>
-		<nav>
-			<ul class="nav__links">
-				<li><a href="sparningar.html">Sparningar</a></li>
-				<li><a href="utgifter.html">Utgifter</a></li>
-				<li><a href="arbetskraft.html">Arbetskraft</a></li>
-				<li class="regleringar"><a href="regleringar.html" class="regleringar">Regleringar</a></li>
+	<nav>
+		<div class="home-part">
+			<a href="index.html">
+			<img class="logo" id="logo" src="images\three_crowns.png" alt="logo"></a>
+			<div class="page-name">
+				<h1 href="index.html" class="title-text">Myndigheten för Statlig Effektivitet</h1>
+				<h1 href="index.html" class="mobile-title-text">@MFSE</h1>
+				<p href="index.html" class="sub-title">Det Svenska Folkets Beslut.</p>
+			</div>
+			<ul class="sidebar">
+				<li class="close-button" onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+				<li ><a href="sparningar.html">Sparningar</a></li>
+				<li ><a href="utgifter.html">Utgifter</a></li>
+				<li ><a href="arbetskraft.html">Arbetskraft</a></li>
+				<li ><a href="regleringar.html">Regleringar</a></li>
 			</ul>
-		</nav>
-	</header>
+		</div>
+		<ul class="nav__links">
+			<li class="hideOnMobile"><a href="sparningar.html">Sparningar</a></li>
+			<li class="hideOnMobile"><a href="utgifter.html">Utgifter</a></li>
+			<li class="hideOnMobile"><a href="arbetskraft.html">Arbetskraft</a></li>
+			<li class="hideOnMobile"><a href="regleringar.html">Regleringar</a></li>
+			<li class="menu-button" onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+		</ul>
+	</nav>
+	<script>
+		function showSidebar() {
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = 'flex'
+		}
+		function hideSidebar() {
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = 'none'
+		}
+	</script>
+	<h1 class="coming-soon">Kommer snart</h1>
 	<div class="reg">
 		<a class="reg" href="https://www.riksdagen.se/sv/dokument-och-lagar/riksdagens-oppna-data/" target="__blank"><button class="reg-button">Sveriges Regleringsdata</button></a>
 	</div>

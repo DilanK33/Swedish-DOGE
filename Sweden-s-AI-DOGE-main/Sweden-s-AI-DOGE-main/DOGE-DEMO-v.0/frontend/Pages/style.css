@@ -301,11 +301,6 @@ li, a, button {
 	margin-top: 4px;
 }
 
-/* Sparningar Sida */
-.sparningar {
-	color: white;
-}
-
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(2, 400px);
@@ -382,7 +377,7 @@ li, a, button {
 	color: rgb(238, 238, 236);
 }
 
-table, th, td {
+.expense-table, .earnings-table, th, td {
 	color: white;
 }
 
@@ -398,7 +393,7 @@ td {
 	text-align: left;
 }
 
-table {
+.expense-table, .earnings-table {
 	width: 100%;
 	border-collapse: collapse; 
 }
@@ -414,25 +409,23 @@ th {
 }
 
 @media(max-width: 650px) {
-	th {
+	.expense-earnings {
 		display: none;
 	}
-	td {
+	.data-cell {
 		display: block;
 	}
 	.wrapper {
 		grid-template-columns: repeat(1, 650px);
 	}
 
-	td:last-child {
-		/* padding-bottom: 3rem; */
-		border-bottom: 1.5px solid rgb(207, 202, 202);
+	.data-cell, td:last-child {
+		font-weight: 800;
 	}
-	td {
+	.data-cell {
 		justify-content: center;
 		display: flex;
 		margin-left: 15%;
-		font-weight: 700;
 	}
 	.grid-container {
 		grid-template-columns: repeat(2, 250px);
@@ -440,11 +433,11 @@ th {
 		margin-top: 20px;
 	}
 	.card-savings {
-		font-size: 20px;
+		font-size: 15px; 
 	}
 	
 	.card-taxpayer {
-		font-size: 20px;
+		font-size: 15px;
 	}
 }
 
@@ -506,15 +499,6 @@ th {
 	background-color: rgb(180, 180, 180);
 }
 
-/* .money-font {
-	font-family: 'Courier New', Courier, monospace;
-} */
-
-/* Regleringar Sida */
-.regleringar {
-	color: white;
-}
-
 /* Länkar */
 /* Sparningar */
 .link-data {
@@ -549,25 +533,22 @@ th {
 }
 
 .decision-container {
-	width: 100%;
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	color: white;
-	font-size: 13px;
-	border: 1px solid white;
 }
 
 .caption {
-	text-align: center;
 	font-size: 35px;
 	font-weight: 700;
 	color: rgb(238, 238, 236);
 }
 
 .decision-table {
-	width: 100%;
-	/* border-collapse: collapse;  */
+	width: min(900px, 95%);
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 13px;
 }
 
 /* Utgifter */
@@ -653,4 +634,19 @@ th {
 	display: flex;
 	justify-content: center;
 	padding: 3rem;
+}
+
+/* Whiten the nav links when clicked*/
+/* Regleringar Sida */
+.regleringar {
+	color: white;
+}
+
+/* Sparningar Sida */
+.sparningar {
+	color: white;
+}
+
+#utgifter {
+	color: white;
 }

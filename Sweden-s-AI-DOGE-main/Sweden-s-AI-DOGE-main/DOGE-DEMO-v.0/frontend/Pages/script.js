@@ -1,12 +1,12 @@
 urls = [
-	"cleaned_2025_jan_earnings.json",
-	"cleaned_2025_jan_spending.json",
-	"cleaned_2024_jan_spending.json",
-	"cleaned_2024_jan_earnings.json",
-	"cleaned_2023_jan_spending.json",
-	"cleaned_2023_jan_earnings.json",
-	"cleaned_2022_jan_spending.json",
-	"cleaned_2022_jan_earnings.json",
+	"data_sheets/cleaned_2025_jan_earnings.json",
+	"data_sheets/cleaned_2025_jan_spending.json",
+	"data_sheets/cleaned_2024_jan_spending.json",
+	"data_sheets/cleaned_2024_jan_earnings.json",
+	"data_sheets/cleaned_2023_jan_spending.json",
+	"data_sheets/cleaned_2023_jan_earnings.json",
+	"data_sheets/cleaned_2022_jan_spending.json",
+	"data_sheets/cleaned_2022_jan_earnings.json",
 ]
 
 /* Dropdown menu listener */
